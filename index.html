@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Countdown Break Timer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="choose-time">
+      <button data-time="300" class="timer-button timer">5 minutes</button>
+      <button data-time="600" class="timer-button timer">10 minutes</button>
+      <button data-time="900" class="timer-button timer">15 minutes</button>
+      <button data-time="1800" class="timer-button timer">30 minutes</button>
+      <button data-time="2700" class="timer-button timer">45 minutes</button>
+      <button data-time="3600" class="timer-button timer">60 minutes</button>
+      <form name="customForm" id="custom" class="timer-form">
+        <input type="number" name="minutes" placeholder="Enter minutes" min="0" class="timer-input timer">
+      </form>
+    </div>
+
+    <div class="display">
+      <div class="display-time"></div>
+      <div class="display-hour"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
